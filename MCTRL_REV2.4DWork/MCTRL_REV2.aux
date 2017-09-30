@@ -1,0 +1,884 @@
+==============================================================
+==============================================================
+4DGL Compiler 2.7.1.0 -- Copyright 2004-2012 4D Labs
+** C:\Users\Brandon\Google Drive\Senior Design Fall 2013\Brandon\Visi\New folder\MCTRL_REV2.4DWork\MCTRL_REV2.4DGenieS
+compiled Mon Apr 14 15:52:12 2014
+
+==============================================================
+==============================================================
+
+
+No Ref for file
+[LINKING]
+function 18, main, address 4271
+(main entry point)
+stack usage 112 + 4
+function 'main' requires no arguments
+function 'main' has no return value
+
+[LINKING]
+function 17, DoGFXObjects, address 6693
+stack usage 0 + 4
+!Empty Function
+[LINKING]
+function 16, UpdateObjects, address 6694
+stack usage 4 + 4
+function 'UpdateObjects' requires 1 argument
+function 'UpdateObjects' has no return value
+
+[LINKING]
+function 15, ActivateForm, address 7328
+stack usage 6 + 4
+function 'ActivateForm' requires 1 argument
+function 'ActivateForm' has no return value
+
+[LINKING]
+function 14, ledDigitsDisplay, address 8011
+stack usage 12 + 4
+function 'ledDigitsDisplay' requires 3 argument
+function 'ledDigitsDisplay' has no return value
+
+[LINKING]
+function 13, TurnOffButtons, address 8325
+stack usage 6 + 4
+function 'TurnOffButtons' requires 1 argument
+function 'TurnOffButtons' has no return value
+
+[LINKING]
+function 12, WriteObject, address 8511
+stack usage 6 + 4
+function 'WriteObject' requires 3 argument
+function 'WriteObject' has no return value
+
+[LINKING]
+function 11, doScope, address 8908
+stack usage 10 + 4
+function 'doScope' requires 2 argument
+function 'doScope' has no return value
+
+[LINKING]
+function 10, drawScope, address 9108
+stack usage 0 + 4
+function 'drawScope' requires 1 argument
+function 'drawScope' has no return value
+
+[LINKING]
+function 9, addressTraces, address 9439
+stack usage 4 + 4
+function 'addressTraces' requires 2 argument
+function 'addressTraces' has no return value
+
+[LINKING]
+function 8, Graticule, address 9562
+stack usage 2 + 4
+function 'Graticule' requires 7 argument
+function 'Graticule' has no return value
+
+[LINKING]
+function 7, gfx_Scope, address 9633
+stack usage 50 + 4
+function 'gfx_Scope' requires 19 argument
+function 'gfx_Scope' has no return value
+
+[LINKING]
+function 6, ReadObject, address 10375
+stack usage 6 + 4
+function 'ReadObject' requires 2 argument
+function 'ReadObject' has no return value
+
+[LINKING]
+function 5, TMul, address 10618
+stack usage 8 + 4
+function 'TMul' requires 3 argument
+function 'TMul' returns a value
+
+[LINKING]
+function 4, seroutOcs, address 10675
+stack usage 0 + 4
+function 'seroutOcs' requires no arguments
+function 'seroutOcs' has no return value
+
+[LINKING]
+function 3, seroutCS, address 10692
+stack usage 0 + 4
+function 'seroutCS' requires 1 argument
+function 'seroutCS' has no return value
+
+[LINKING]
+function 2, PrintStrings, address 10711
+stack usage 14 + 4
+function 'PrintStrings' requires 3 argument
+function 'PrintStrings' has no return value
+
+[LINKING]
+function 1, XYposToDegree, address 11189
+stack usage 6 + 4
+function 'XYposToDegree' requires 2 argument
+function 'XYposToDegree' returns a value
+
+[RESERVED WORDS]
+#inherit
+#LISTCODE
+#MODE
+#STACK
+#OPTIMIZE_ON
+#OPTIMIZE_OFF
+byte
+word
+dword
+float
+private
+#IF
+#IFNOT
+#ELSE
+#ENDIF
+#CONST
+#constant
+#USE
+USING
+func
+endfunc
+var
+#STOP
+#DATA
+#ASM
+#END
+#platform
+EXISTS
+#ERROR
+#MESSAGE
+#NOTICE
+sizeof
+argcount
+if
+else
+endif
+while
+wend
+repeat
+until
+forever
+return
+break
+continue
+for
+next
+switch
+case
+default
+endswitch
+print
+goto
+gosub
+endsub
+mcall
+lookup8
+lookup16
+
+[MACRO]
+
+[CONSTANTS]
+__MAXMEM                          00003840      14400  (usage 1)
+__MAXPROG                         00003840      14400  (usage 1)
+ACK                               00000006          6  (usage 12)
+AQUA                              000007FF       2047  (usage 18)
+BACKGROUND_COLOUR                 00000011         17  (usage 3)
+BGIMAGE                           00000020         32  (usage 12)
+BLACK                             00000000          0  (usage 33)
+BLUE                              0000001F         31  (usage 3)
+CMDLenMAX                         00000050         80  (usage 12)
+COM0                              0000F804      63492  (usage 3)
+FONT3                             00000002          2  (usage 9)
+FUCHSIA                           0000F81F      63519  (usage 3)
+i4Dbutton0                        0000000D         13  (usage 3)
+i4Dbutton1                        0000000E         14  (usage 3)
+i4Dbutton13                       00000045         69  (usage 3)
+i4Dbutton14                       00000046         70  (usage 3)
+i4Dbutton15                       00000042         66  (usage 3)
+i4Dbutton16                       00000047         71  (usage 3)
+i4Dbutton17                       00000048         72  (usage 3)
+i4Dbutton18                       00000049         73  (usage 3)
+i4Dbutton19                       0000004A         74  (usage 3)
+i4Dbutton2                        0000000F         15  (usage 3)
+i4Dbutton20                       00000071        113  (usage 3)
+i4Dbutton21                       00000072        114  (usage 3)
+i4Dbutton22                       00000073        115  (usage 3)
+i4Dbutton23                       00000074        116  (usage 3)
+i4Dbutton24                       00000050         80  (usage 3)
+i4Dbutton25                       00000051         81  (usage 3)
+i4Dbutton26                       00000052         82  (usage 3)
+i4Dbutton27                       00000053         83  (usage 3)
+i4Dbutton28                       00000054         84  (usage 3)
+i4Dbutton29                       00000055         85  (usage 3)
+i4Dbutton3                        00000010         16  (usage 3)
+i4Dbutton4                        00000044         68  (usage 3)
+i4Dbutton5                        0000003D         61  (usage 3)
+i4Dbutton6                        0000003E         62  (usage 3)
+i4Dbutton7                        0000003F         63  (usage 3)
+i4Dbutton8                        00000040         64  (usage 3)
+i4Dbutton9                        00000041         65  (usage 3)
+I_ENABLED                         00008000      32768  (usage 6)
+I_STAYONTOP                       00000100        256  (usage 3)
+I_TOUCH_DISABLE                   00000020         32  (usage 6)
+iCoolgauge0                       00000058         88  (usage 3)
+iCoolgauge1                       0000005C         92  (usage 3)
+iCoolgauge2                       00000059         89  (usage 3)
+iCoolgauge3                       0000005A         90  (usage 3)
+iDigits                           00000002          2  (usage 9)
+iForm8                            00000064        100  (usage 3)
+iForm9                            00000077        119  (usage 3)
+iImage0                           00000004          4  (usage 3)
+iImage1                           00000056         86  (usage 3)
+iImage2                           00000057         87  (usage 3)
+iImage3                           00000006          6  (usage 3)
+iImage4                           00000039         57  (usage 3)
+iImage5                           00000005          5  (usage 3)
+iKnob1                            0000002D         45  (usage 3)
+iKnob2                            0000002C         44  (usage 3)
+iLeadingBlanks                    00000008          8  (usage 3)
+iLed0                             00000012         18  (usage 3)
+iLed1                             00000028         40  (usage 3)
+iLed2                             00000027         39  (usage 3)
+iLed3                             00000026         38  (usage 3)
+iLed4                             00000025         37  (usage 3)
+iLed5                             00000024         36  (usage 3)
+iLed6                             00000013         19  (usage 3)
+iLed7                             00000014         20  (usage 3)
+iLed8                             00000015         21  (usage 3)
+iLeddigits0                       0000003A         58  (usage 3)
+iLeddigits1                       0000001C         28  (usage 3)
+iLeddigits2                       0000001A         26  (usage 3)
+iLeddigits3                       00000032         50  (usage 3)
+iLeddigits4                       00000034         52  (usage 3)
+ileft                             00000000          0  (usage 3)
+IMAGE_FLAGS                       00000006          6  (usage 3)
+IMAGE_INDEX                       00000009          9  (usage 42)
+IMAGE_TAG                         0000000C         12  (usage 9)
+IMAGE_TAG2                        0000000D         13  (usage 9)
+IMAGE_XPOS                        00000002          2  (usage 3)
+iMeter0                           00000007          7  (usage 3)
+iMeter1                           00000008          8  (usage 3)
+iMeter2                           00000009          9  (usage 3)
+iMeter3                           0000000A         10  (usage 3)
+iMeter4                           0000000B         11  (usage 3)
+iMeter5                           00000020         32  (usage 3)
+iMinDigits                        00000004          4  (usage 3)
+IPD_DOWN                          00000010         16  (usage 6)
+IPD_OBJVidx                       00000014         20  (usage 21)
+IPD_P1                            00000002          2  (usage 15)
+IPD_P2                            00000004          4  (usage 57)
+IPD_P3                            00000006          6  (usage 21)
+IPD_P4                            00000008          8  (usage 21)
+IPD_P5                            0000000A         10  (usage 15)
+IPD_P6                            0000000C         12  (usage 21)
+IPD_P7                            0000000E         14  (usage 3)
+IPD_RELEASE                       00000012         18  (usage 9)
+IPDatasize                        00000016         22  (usage 3)
+iSlider0                          0000000C         12  (usage 3)
+iSlider1                          00000065        101  (usage 3)
+iSlider2                          0000006A        106  (usage 3)
+iSlider3                          00000068        104  (usage 3)
+iSlider4                          00000069        105  (usage 3)
+iStatictext0                      00000062         98  (usage 3)
+iStatictext1                      00000029         41  (usage 3)
+iStatictext10                     0000004D         77  (usage 3)
+iStatictext11                     0000004E         78  (usage 3)
+iStatictext12                     0000004F         79  (usage 3)
+iStatictext13                     00000066        102  (usage 3)
+iStatictext14                     00000067        103  (usage 3)
+iStatictext15                     0000006C        108  (usage 3)
+iStatictext16                     0000006D        109  (usage 3)
+iStatictext17                     0000006E        110  (usage 3)
+iStatictext18                     0000006F        111  (usage 3)
+iStatictext19                     00000070        112  (usage 3)
+iStatictext2                      0000002A         42  (usage 3)
+iStatictext23                     0000002B         43  (usage 3)
+iStatictext24                     00000031         49  (usage 3)
+iStatictext25                     00000030         48  (usage 3)
+iStatictext26                     00000075        117  (usage 3)
+iStatictext27                     00000076        118  (usage 3)
+iStatictext28                     00000063         99  (usage 3)
+iStatictext3                      0000004B         75  (usage 3)
+iStatictext4                      00000037         55  (usage 3)
+iStatictext5                      00000038         56  (usage 3)
+iStatictext6                      0000001F         31  (usage 3)
+iStatictext7                      0000001E         30  (usage 3)
+iStatictext8                      00000019         25  (usage 3)
+iStatictext9                      0000004C         76  (usage 3)
+iTank1                            00000018         24  (usage 3)
+iThermometer1                     00000021         33  (usage 3)
+iTrackbar1                        00000043         67  (usage 3)
+iUserled0                         0000005E         94  (usage 3)
+iUserled1                         00000022         34  (usage 3)
+iUserled10                        0000002F         47  (usage 3)
+iUserled2                         00000023         35  (usage 3)
+iUserled3                         0000005F         95  (usage 3)
+iUserled4                         00000060         96  (usage 3)
+iUserled5                         00000061         97  (usage 3)
+iUserled9                         0000002E         46  (usage 3)
+iWidthDigit                       00000006          6  (usage 3)
+iWinbutton0                       00000011         17  (usage 3)
+iWinbutton1                       00000000          0  (usage 3)
+iWinbutton10                      0000005D         93  (usage 3)
+iWinbutton11                      0000006B        107  (usage 3)
+iWinbutton12                      00000078        120  (usage 3)
+iWinbutton13                      00000079        121  (usage 3)
+iWinbutton14                      0000007A        122  (usage 3)
+iWinbutton15                      0000007B        123  (usage 3)
+iWinbutton16                      0000007C        124  (usage 3)
+iWinbutton17                      0000007D        125  (usage 3)
+iWinbutton18                      0000007E        126  (usage 3)
+iWinbutton19                      0000007F        127  (usage 3)
+iWinbutton2                       00000001          1  (usage 3)
+iWinbutton20                      00000080        128  (usage 3)
+iWinbutton3                       00000017         23  (usage 3)
+iWinbutton4                       00000002          2  (usage 3)
+iWinbutton5                       00000003          3  (usage 3)
+iWinbutton6                       0000003C         60  (usage 3)
+iWinbutton7                       0000005B         91  (usage 3)
+iWinbutton8                       00000016         22  (usage 3)
+iWinbutton9                       00000036         54  (usage 3)
+LANDSCAPE                         00000000          0  (usage 3)
+LIME                              000007E0       2016  (usage 9)
+MaxTotObjects                     00000021         33  (usage 6)
+NAK                               00000015         21  (usage 24)
+nInputs                           00000077        119  (usage 3)
+OFF                               00000000          0  (usage 3)
+ON                                00000001          1  (usage 3)
+OT_ACTIVATE                       00000067        103  (usage 66)
+OT_NEXTFRAME                      00000068        104  (usage 3)
+OT_NEXTSTRING                     0000006A        106  (usage 3)
+OT_PREVFRAME                      00000069        105  (usage 3)
+OT_PREVSTRING                     0000006B        107  (usage 3)
+OT_REPORT                         00000064        100  (usage 42)
+OT_SETANOTHER                     00000066        102  (usage 33)
+OT_SETCONST                       00000065        101  (usage 60)
+PICASO                            00000001          1  (usage 3)
+READ_OBJ                          00000000          0  (usage 3)
+RED                               0000F800      63488  (usage 6)
+REPORT_EVENT                      00000007          7  (usage 3)
+REPORT_OBJ                        00000005          5  (usage 3)
+RUNFLASH                          00000080        128  (usage 3)
+scBottom                          00000015         21  (usage 9)
+scColor                           00000000          0  (usage 6)
+scDataPoints                      00000016         22  (usage 9)
+scForm                            00000013         19  (usage 6)
+scGraticuleCol                    00000001          1  (usage 6)
+scGraticuleVis                    00000002          2  (usage 6)
+scGraticuleXinc                   00000003          3  (usage 6)
+scGraticuleYinc                   00000004          4  (usage 6)
+scLeft                            00000005          5  (usage 18)
+SCOPEENTS                         00000018         24  (usage 9)
+scRefreshInc                      00000006          6  (usage 3)
+scRight                           00000014         20  (usage 15)
+scTop                             00000007          7  (usage 9)
+scTrace1Col                       00000008          8  (usage 3)
+scTrace2Col                       00000009          9  (usage 3)
+scTrace3Col                       0000000A         10  (usage 3)
+scTrace4Col                       0000000B         11  (usage 3)
+scTraces                          0000000C         12  (usage 12)
+scWidth                           0000000D         13  (usage 3)
+scXmag                            0000000E         14  (usage 3)
+scYamp                            0000000F         15  (usage 3)
+scYLineCol                        00000011         17  (usage 6)
+scYLineForm                       00000010         16  (usage 6)
+scYLineVis                        00000012         18  (usage 6)
+scYZero                           00000017         23  (usage 3)
+STAnsi                            00000016         22  (usage 3)
+STBGColor                         00000010         16  (usage 6)
+STFGColor                         0000000E         14  (usage 3)
+STFontAttribs                     00000012         18  (usage 3)
+STForm                            00000018         24  (usage 3)
+Strings0Size                      0000000B         11  (usage 3)
+Strings0StartH                    00000000          0  (usage 3)
+Strings0StartL                    00000400       1024  (usage 3)
+Strings1Size                      0000001E         30  (usage 3)
+Strings1StartH                    00000000          0  (usage 3)
+Strings1StartL                    00000200        512  (usage 3)
+Strings2Size                      00000023         35  (usage 3)
+Strings2StartH                    00000000          0  (usage 3)
+Strings2StartL                    00000000          0  (usage 3)
+Strings3Size                      00000016         22  (usage 3)
+Strings3StartH                    00000000          0  (usage 3)
+Strings3StartL                    00000C00       3072  (usage 3)
+Strings4Size                      00000018         24  (usage 3)
+Strings4StartH                    00000000          0  (usage 3)
+Strings4StartL                    00000E00       3584  (usage 3)
+Strings5Size                      00000014         20  (usage 3)
+Strings5StartH                    00000000          0  (usage 3)
+Strings5StartL                    00001000       4096  (usage 3)
+Strings6Size                      00000011         17  (usage 3)
+Strings6StartH                    00000000          0  (usage 3)
+Strings6StartL                    00000A00       2560  (usage 3)
+Strings7Size                      0000000C         12  (usage 3)
+Strings7StartH                    00000000          0  (usage 3)
+Strings7StartL                    00000600       1536  (usage 3)
+Strings8Size                      0000000D         13  (usage 3)
+Strings8StartH                    00000000          0  (usage 3)
+Strings8StartL                    00001200       4608  (usage 3)
+Strings9Size                      0000000B         11  (usage 3)
+Strings9StartH                    00000000          0  (usage 3)
+Strings9StartL                    00000800       2048  (usage 3)
+STSize                            00000004          4  (usage 3)
+STStartH                          00000000          0  (usage 3)
+STStartL                          00000002          2  (usage 3)
+STTransparent                     00000014         20  (usage 3)
+STx1                              00000006          6  (usage 12)
+STx2                              0000000A         10  (usage 9)
+STy1                              00000008          8  (usage 12)
+STy2                              0000000C         12  (usage 9)
+t4Dbutton                         0000001E         30  (usage 102)
+tAngularmeter                     00000007          7  (usage 3)
+tAniButton                        0000001F         31  (usage 9)
+tColorPicker                      00000020         32  (usage 3)
+tCoolgauge                        00000008          8  (usage 3)
+tCustomdigits                     00000009          9  (usage 6)
+tDipSwitch                        00000000          0  (usage 3)
+tForm                             0000000A         10  (usage 15)
+tGauge                            0000000B         11  (usage 3)
+tGSlider                          00000004          4  (usage 21)
+tImage                            0000000C         12  (usage 3)
+tKeyboard                         0000000D         13  (usage 3)
+tKnob                             00000001          1  (usage 9)
+tLed                              0000000E         14  (usage 3)
+tLeddigits                        0000000F         15  (usage 12)
+tMeter                            00000010         16  (usage 3)
+TOUCH_ENABLE                      00000000          0  (usage 3)
+TOUCH_GETX                        00000001          1  (usage 3)
+TOUCH_GETY                        00000002          2  (usage 3)
+TOUCH_MOVING                      00000003          3  (usage 3)
+TOUCH_PRESSED                     00000001          1  (usage 9)
+TOUCH_RELEASED                    00000002          2  (usage 18)
+TOUCH_STATUS                      00000000          0  (usage 3)
+tPinInput                         0000001D         29  (usage 6)
+tPinOutput                        0000001C         28  (usage 6)
+TRANSPARENT                       00000000          0  (usage 3)
+tRockerSwitch                     00000002          2  (usage 3)
+tRotarySwitch                     00000003          3  (usage 3)
+tScope                            00000019         25  (usage 3)
+tSounds                           00000016         22  (usage 12)
+tSpectrum                         00000018         24  (usage 3)
+tStaticText                       00000015         21  (usage 3)
+tStrings                          00000011         17  (usage 18)
+tTank                             0000001A         26  (usage 3)
+tThermometer                      00000012         18  (usage 3)
+tTimer                            00000017         23  (usage 6)
+tTrackbar                         00000005          5  (usage 6)
+tUserButton                       00000021         33  (usage 9)
+tUserImages                       0000001B         27  (usage 3)
+tUserled                          00000013         19  (usage 3)
+tVideo                            00000014         20  (usage 3)
+tWinButton                        00000006          6  (usage 81)
+WRITE_CONTRAST                    00000004          4  (usage 3)
+WRITE_OBJ                         00000001          1  (usage 3)
+WRITE_STR                         00000002          2  (usage 3)
+WRITE_STRU                        00000003          3  (usage 3)
+YELLOW                            0000FFE0      65504  (usage 3)
+
+[PmmC FUNCTIONS]
+ABS                               FFFFFFF3         -13  args=1 r=1  (usage 9)
+com_Count                         FFFFFF86        -122  args=0 r=1  (usage 3)
+com_Init                          FFFFFF88        -120  args=3 r=0  (usage 3)
+com_SetBaud                       FFFFFF72        -142  args=2 r=1  (usage 3)
+com_TXbuffer                      FFFFFF82        -126  args=3 r=0  (usage 3)
+file_GetC                         FFFFFF0E        -242  args=1 r=1  (usage 3)
+file_GetW                         FFFFFF0C        -244  args=1 r=1  (usage 3)
+file_LoadImageControl             FFFFFF04        -252  args=3 r=1  (usage 18)
+file_Mount                        FFFFFF03        -253  args=0 r=1  (usage 6)
+file_Open                         FFFFFF19        -231  args=2 r=1  (usage 3)
+file_PlayWAV                      FFFFFF01        -255  args=1 r=1  (usage 3)
+file_Seek                         FFFFFF16        -234  args=3 r=1  (usage 3)
+gfx_Clipping                      FFFFFFA2         -94  args=1 r=0  (usage 6)
+gfx_ClipWindow                    FFFFFFB5         -75  args=4 r=0  (usage 3)
+gfx_Cls                           FFFFFFCD         -51  args=0 r=0  (usage 6)
+gfx_Contrast                      FFFFFF9C        -100  args=1 r=1  (usage 3)
+gfx_Hline                         FFFFFFC7         -57  args=4 r=1  (usage 6)
+gfx_Line                          FFFFFFC8         -56  args=5 r=0  (usage 24)
+gfx_MoveTo                        FFFFFFCC         -52  args=2 r=0  (usage 3)
+gfx_PutPixel                      FFFFFFC1         -63  args=3 r=0  (usage 3)
+gfx_RectangleFilled               FFFFFFC4         -60  args=5 r=0  (usage 9)
+gfx_ScreenMode                    FFFFFF9E         -98  args=1 r=1  (usage 3)
+gfx_Set                           FFFFFFCE         -50  args=2 r=0  (usage 3)
+img_ClearAttributes               FFFFFF45        -187  args=3 r=1  (usage 3)
+img_Disable                       FFFFFF4C        -180  args=2 r=1  (usage 6)
+img_GetWord                       FFFFFF48        -184  args=3 r=1  (usage 42)
+img_SetAttributes                 FFFFFF46        -186  args=3 r=1  (usage 6)
+img_SetWord                       FFFFFF49        -183  args=4 r=1  (usage 24)
+img_Show                          FFFFFF47        -185  args=2 r=1  (usage 21)
+img_Touched                       FFFFFF44        -188  args=2 r=1  (usage 3)
+mem_Copy                          FFFFFF21        -223  args=3 r=1  (usage 3)
+pause                             FFFFFFFA          -6  args=1 r=0  (usage 6)
+putch                             FFFFFFFE          -2  args=1 r=0  (usage 6)
+putstr                            FFFFFFF7          -9  args=1 r=1  (usage 6)
+serin                             FFFFFFFF          -1  args=0 r=1  (usage 3)
+serout                            FFFFFFFD          -3  args=1 r=0  (usage 42)
+snd_Continue                      FFFFFEFB        -261  args=0 r=0  (usage 3)
+snd_Pause                         FFFFFEFC        -260  args=0 r=0  (usage 3)
+snd_Playing                       FFFFFEFA        -262  args=0 r=1  (usage 3)
+snd_Stop                          FFFFFEFD        -259  args=0 r=0  (usage 3)
+snd_Volume                        FFFFFF00        -256  args=1 r=0  (usage 3)
+SWAP                              FFFFFFF0         -16  args=2 r=0  (usage 3)
+sys_EventsResume                  FFFFFF3C        -196  args=0 r=0  (usage 3)
+touch_Get                         FFFFFF37        -201  args=1 r=1  (usage 9)
+touch_Set                         FFFFFF38        -200  args=1 r=0  (usage 3)
+txt_Attributes                    FFFFFFDA         -38  args=1 r=1  (usage 3)
+txt_BGcolour                      FFFFFFE6         -26  args=1 r=1  (usage 3)
+txt_FGcolour                      FFFFFFE7         -25  args=1 r=1  (usage 3)
+txt_FontID                        FFFFFFE5         -27  args=1 r=1  (usage 3)
+txt_Opacity                       FFFFFFDF         -33  args=1 r=1  (usage 3)
+uadd_3232                         FFFFFEDE        -290  args=3 r=1  (usage 3)
+umul_1616                         FFFFFEDF        -289  args=3 r=1  (usage 12)
+
+[USER FUNCTIONS]
+ActivateForm                      00001CA0  args=1 r=0  (usage 9)
+addressTraces                     000024DF  args=2 r=0  (usage 6)
+DoGFXObjects                      00001A25  args=0 r=0  (usage 6)
+doScope                           000022CC  args=2 r=0  (usage 3)
+drawScope                         00002394  args=1 r=0  (usage 6)
+gfx_Scope                         000025A1  args=19 r=0  (usage 3)
+Graticule                         0000255A  args=7 r=0  (usage 6)
+ledDigitsDisplay                  00001F4B  args=3 r=0  (usage 6)
+PrintStrings                      000029D7  args=3 r=0  (usage 9)
+ReadObject                        00002887  args=2 r=0  (usage 3)
+seroutCS                          000029C4  args=1 r=0  (usage 30)
+seroutOcs                         000029B3  args=0 r=0  (usage 6)
+TMul                              0000297A  args=3 r=0  (usage 9)
+TurnOffButtons                    00002085  args=1 r=0  (usage 6)
+UpdateObjects                     00001A26  args=1 r=0  (usage 9)
+WriteObject                       0000213F  args=3 r=0  (usage 30)
+XYposToDegree                     00002BB5  args=2 r=0  (usage 3)
+
+[GLOBAL VARIABLES]
+cmd                                 2099  word[80]   (usage 78)
+comRX                               2059  word[40]   (usage 3)
+cs                                  2179  word       (usage 42)
+curform                             2052  word       (usage 48)
+disk                                   1  word       (usage 6)
+hFonts                                 3  word[10]   (usage 39)
+hndl                                   2  word       (usage 108)
+hstrings                              40  word       (usage 12)
+input                               2057  word       (usage 81)
+inputtype                           2055  word       (usage 30)
+iSounds                               13  word[17]   (usage 54)
+object                              2058  word       (usage 30)
+Ocs                                 2180  word       (usage 9)
+oObjects                            2018  word[34]   (usage 108)
+sc0Newval1                           296  word[246]   (usage 3)
+sc0Newval2                           788  word[246]   (usage 3)
+sc0Newval3                          1280  word[246]   (usage 3)
+sc0Newval4                          1772  word[246]   (usage 3)
+sc0Oldval1                            50  word[246]   (usage 6)
+sc0Oldval2                           542  word[246]   (usage 3)
+sc0Oldval3                          1034  word[246]   (usage 3)
+sc0Oldval4                          1526  word[246]   (usage 3)
+scCurpos                              49  word[1]   (usage 12)
+scTracebuf                            41  word[8]   (usage 30)
+stringsCV                             30  word[10]   (usage 27)
+tnew                                2185  word[4]   (usage 21)
+told                                2181  word[4]   (usage 21)
+TState                              2056  word       (usage 24)
+x                                   2053  word       (usage 18)
+y                                   2054  word       (usage 16)
+
+[PRIVATE VARIABLES]
+
+[DATA]
+0007: 00 01 01 02 02 03 03 04 05 05 06 06 07 07 08 09     ................
+0017: 09 0A 0A 0B 0B 0C 0C 0D 0D 0E 0F 0F 10 10 11 11     ................
+0027: 12 12 13 13 14 14 15 15 16 16 17 17 18 18 19 19     ................
+0037: 1A 1A 1B 1B 1B 1C 1C 1D 1D 1E 1E 1F 1F 1F 20 20     ..............  
+0047: 21 21 21 22 22 23 23 23 24 24 25 25 25 26 26 26     !!!""###$$%%%&&&
+0057: 27 27 27 28 28 28 29 29 29 2A 2A 2A 2B 2B 2B 2C     '''((()))***+++,
+0067: 2C 2C 2C 2D 2D 00 00 07 00 17 00 3C 00 2B 00 56     ,,,--......<.+.V
+0077: 00 57 00 58 00 64 00 77 00 81 00 07 00 17 00 2B     .W.X.d.w.Å.....+
+0087: 00 56 00 3C 00 57 00 58 00 64 00 77 00 81 00 81     .V.<.W.X.d.w.Å.Å
+0097: 00 00 00 2C 00 58 00 84 00 FF FF FF FF FF FF FF     ...,.X.Ñ.ˇˇˇˇˇˇˇ
+00A7: FF FF FF FF FF FF FF FF FF B0 00 DC 00 34 01 8C     ˇˇˇˇˇˇˇˇˇ∞.‹.4.å
+00B7: 01 E4 01 3C 02 FF FF FF FF FF FF FF FF 68 02 94     .‰.<.ˇˇˇˇˇˇˇˇh.î
+00C7: 02 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     .ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ
+00D7: FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF     ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇ
+00E7: FF FF FF FF FF FF FF FF FF C0 02 EC 02 FF FF FF     ˇˇˇˇˇˇˇˇˇ¿.Ï.ˇˇˇ
+00F7: FF FF FF FF FF FF FF FF FF FF FF FF FF 18 03 FF     ˇˇˇˇˇˇˇˇˇˇˇˇˇ..ˇ
+0107: FF FF FF FF FF FF FF FF FF 44 03 70 03 9C 03 C8     ˇˇˇˇˇˇˇˇˇD.p.ú.»
+0117: 03 F4 03 20 04 4C 04 78 04 BA 04 E6 04 12 05 3E     .Ù. .L.x.∫.Ê...>
+0127: 05 6A 05 96 05 C2 05 FF FF FF FF FF FF FF FF FF     .j.ñ.¬.ˇˇˇˇˇˇˇˇˇ
+0137: FF EE 05 1A 06 46 06 72 06 9E 06 CA 06 FF FF FF     ˇÓ...F.r.û. .ˇˇˇ
+0147: FF FF FF FF FF FF FF F6 06 FF FF 22 07 FF FF FF     ˇˇˇˇˇˇˇˆ.ˇˇ".ˇˇˇ
+0157: FF FF FF FF FF FF FF FF FF FF FF 4E 07 FF FF FF     ˇˇˇˇˇˇˇˇˇˇˇN.ˇˇˇ
+0167: FF 64 07 90 07 A6 07 D2 07 FF FF FF FF FF FF FF     ˇd.ê.¶.“.ˇˇˇˇˇˇˇ
+0177: FF FF FF FE 07 2A 08 56 08 82 08 FF FF FF FF FF     ˇˇˇ˛.*.V.Ç.ˇˇˇˇˇ
+0187: FF AE 08 DA 08 06 09 32 09 5E 09 8A 09 B6 09 E2     ˇÆ.⁄...2.^.ä.∂.‚
+0197: 09 0E 0A 06 00 01 00 FF FF FF FF FF FF FF FF FF     .......ˇˇˇˇˇˇˇˇˇ
+01A7: FF FF FF 00 00 16 00 04 00 67 00 0A 00 01 00 00     ˇˇˇ......g......
+01B7: 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 06     ................
+01C7: 00 01 00 FF FF FF FF FF FF FF FF FF FF FF FF 00     ...ˇˇˇˇˇˇˇˇˇˇˇˇ.
+01D7: 00 42 00 06 00 67 00 0A 00 02 00 00 00 12 00 00     .B...g..........
+01E7: 00 00 00 00 00 00 00 00 00 00 00 06 00 01 00 FF     ...............ˇ
+01F7: FF FF FF FF FF FF FF FF FF FF FF 00 00 6E 00 0A     ˇˇˇˇˇˇˇˇˇˇˇ..n..
+0207: 00 67 00 0A 00 04 00 00 00 12 00 00 00 00 00 00     .g..............
+0217: 00 00 00 00 00 00 00 06 00 01 00 FF FF FF FF FF     ...........ˇˇˇˇˇ
+0227: FF FF FF FF FF FF FF 00 00 9A 00 0C 00 67 00 0A     ˇˇˇˇˇˇˇ..ö...g..
+0237: 00 09 00 00 00 12 00 00 00 00 00 00 00 00 00 00     ................
+0247: 00 00 00 04 00 00 00 AB 00 5C 00 FF 00 C8 02 FF     .......´.\.ˇ.».ˇ
+0257: FF FF FF C6 00 00 00 02 00 64 00 00 00 00 00 00     ˇˇˇ∆.....d......
+0267: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 1E     ................
+0277: 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF 00     ...ˇˇˇˇˇˇˇˇˇˇˇˇ.
+0287: 00 F2 00 02 00 66 00 0E 00 00 00 00 00 12 00 00     .Ú...f..........
+0297: 00 00 00 00 00 00 00 08 01 00 00 66 00 0E 00 01     ...........f....
+02A7: 00 00 00 12 00 00 00 00 00 00 00 00 00 1E 01 01     ................
+02B7: 00 64 00 00 00 00 00 00 00 00 00 00 00 00 00 00     .d..............
+02C7: 00 00 00 00 00 00 00 1E 00 00 00 FF FF FF FF FF     ...........ˇˇˇˇˇ
+02D7: FF FF FF FF FF FF FF 00 00 4A 01 04 00 66 00 0E     ˇˇˇˇˇˇˇ..J...f..
+02E7: 00 06 00 00 00 12 00 00 00 00 00 00 00 00 00 60     ...............`
+02F7: 01 06 00 66 00 0E 00 03 00 00 00 12 00 00 00 00     ...f............
+0307: 00 00 00 00 00 76 01 03 00 64 00 00 00 00 00 00     .....v...d......
+0317: 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 1E     ................
+0327: 00 00 00 FF FF FF FF FF FF FF FF FF FF FF FF 00     ...ˇˇˇˇˇˇˇˇˇˇˇˇ.
+0337: 00 A2 01 06 00 66 00 0E 00 08 00 00 00 12 00 00     .¢...f..........
+0347: 00 00 00 00 00 00 00 B8 01 08 00 66 00 0E 00 04     .......∏...f....
+0357: 00 00 00 12 00 00 00 00 00 00 00 00 00 CE 01 04     .............Œ..
+0367: 00 64 00 00 00 00 00 00 00 00 00 00 00 00 00 00     .d..............
+0377: 00 00 00 00 00 02 00 1E 00 00 00 FF FF FF FF FF     ...........ˇˇˇˇˇ
+0387: FF FF FF FF FF FF FF 00 00 FA 01 08 00 66 00 0E     ˇˇˇˇˇˇˇ..˙...f..
+0397: 00 07 00 00 00 12 00 00 00 00 00 00 00 00 00 10     ................
+03A7: 02 07 00 66 00 0E 00 02 00 00 00 12 00 00 00 00     ...f............
+03B7: 00 00 00 00 00 26 02 02 00 64 00 00 00 00 00 00     .....&...d......
+03C7: 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 06     ................
+03D7: 00 01 00 FF FF FF FF FF FF FF FF FF FF FF FF 00     ...ˇˇˇˇˇˇˇˇˇˇˇˇ.
+03E7: 00 52 02 02 00 67 00 0A 00 00 00 00 00 12 00 00     .R...g..........
+03F7: 00 00 00 00 00 00 00 00 00 00 00 06 00 01 00 FF     ...............ˇ
+0407: FF FF FF FF FF FF FF FF FF FF FF 00 00 7E 02 12     ˇˇˇˇˇˇˇˇˇˇˇ..~..
+0417: 00 67 00 0A 00 07 00 00 00 12 00 00 00 00 00 00     .g..............
+0427: 00 00 00 00 00 00 00 06 00 01 00 FF FF FF FF FF     ...........ˇˇˇˇˇ
+0437: FF FF FF FF FF FF FF 00 00 AA 02 08 00 67 00 0A     ˇˇˇˇˇˇˇ..™...g..
+0447: 00 00 00 00 00 12 00 00 00 00 00 00 00 00 00 00     ................
+0457: 00 00 00 01 00 B5 01 82 00 2D 00 3B 01 0E 01 FF     .....µ.Ç.-.;...ˇ
+0467: 00 F2 00 00 00 D6 02 06 00 64 00 00 00 00 00 00     .Ú...÷...d......
+0477: 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 01     ................
+0487: 00 42 00 86 00 2D 00 3B 01 0E 01 FF 00 F2 00 00     .B.Ü.-.;...ˇ.Ú..
+0497: 00 02 03 04 00 64 00 00 00 00 00 00 00 00 00 00     .....d..........
+04A7: 00 00 00 00 00 00 00 00 00 01 00 06 00 01 00 FF     ...............ˇ
+04B7: FF FF FF FF FF FF FF FF FF FF FF 00 00 2E 03 14     ˇˇˇˇˇˇˇˇˇˇˇ.....
+04C7: 00 67 00 0A 00 00 00 00 00 12 00 00 00 00 00 00     .g..............
+04D7: 00 00 00 00 00 00 00 06 00 01 00 FF FF FF FF FF     ...........ˇˇˇˇˇ
+04E7: FF FF FF FF FF FF FF 00 00 5A 03 0E 00 67 00 0A     ˇˇˇˇˇˇˇ..Z...g..
+04F7: 00 00 00 00 00 12 00 00 00 00 00 00 00 00 00 00     ................
+0507: 00 00 00 1E 00 01 00 FF FF FF FF FF FF FF FF FF     .......ˇˇˇˇˇˇˇˇˇ
+0517: FF FF FF 00 00 86 03 0C 00 65 00 16 00 00 00 00     ˇˇˇ..Ü...e......
+0527: 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 1E     ................
+0537: 00 01 00 FF FF FF FF FF FF FF FF FF FF FF FF 00     ...ˇˇˇˇˇˇˇˇˇˇˇˇ.
+0547: 00 B2 03 0E 00 65 00 16 00 00 00 01 00 12 00 00     .≤...e..........
+0557: 00 00 00 00 00 00 00 00 00 00 00 1E 00 01 00 FF     ...............ˇ
+0567: FF FF FF FF FF FF FF FF FF FF FF 00 00 DE 03 10     ˇˇˇˇˇˇˇˇˇˇˇ..ﬁ..
+0577: 00 65 00 16 00 00 00 03 00 12 00 00 00 00 00 00     .e..............
+0587: 00 00 00 00 00 00 00 1E 00 01 00 01 00 FF FF FF     .............ˇˇˇ
+0597: FF FF FF FF FF FF FF 00 00 0A 04 12 00 65 00 16     ˇˇˇˇˇˇˇ......e..
+05A7: 00 00 00 04 00 12 00 00 00 00 00 00 00 00 00 00     ................
+05B7: 00 00 00 1E 00 01 00 FF FF FF FF FF FF FF FF FF     .......ˇˇˇˇˇˇˇˇˇ
+05C7: FF FF FF 00 00 36 04 14 00 65 00 16 00 03 00 00     ˇˇˇ..6...e......
+05D7: 00 12 00 00 00 00 00 00 00 00 00 00 00 00 00 1E     ................
+05E7: 00 01 00 FF FF FF FF FF FF FF FF FF FF FF FF 00     ...ˇˇˇˇˇˇˇˇˇˇˇˇ.
+05F7: 00 62 04 20 00 65 00 16 00 02 00 00 00 12 00 00     .b. .e..........
+0607: 00 00 00 00 00 00 00 00 00 00 00 05 00 00 00 42     ...............B
+0617: 00 93 00 64 00 BD 01 FF FF FF FF A4 04 00 00 04     .ì.d.Ω.ˇˇˇˇ§....
+0627: 00 66 00 16 00 01 00 00 00 10 00 00 00 00 00 00     .f..............
+0637: 00 00 00 00 00 00 00 66 00 16 00 01 00 00 00 10     .......f........
+0647: 00 00 00 00 00 00 00 00 00 00 00 00 00 1E 00 01     ................
+0657: 00 02 00 FF FF FF FF FF FF FF FF FF FF 00 00 D0     ...ˇˇˇˇˇˇˇˇˇˇ..–
+0667: 04 0A 00 65 00 16 00 00 00 05 00 12 00 00 00 00     ...e............
+0677: 00 00 00 00 00 00 00 00 00 1E 00 01 00 FF FF FF     .............ˇˇˇ
+0687: FF FF FF FF FF FF FF FF FF 00 00 FC 04 1C 00 65     ˇˇˇˇˇˇˇˇˇ..¸...e
+0697: 00 16 00 00 00 06 00 12 00 00 00 00 00 00 00 00     ................
+06A7: 00 00 00 00 00 1E 00 01 00 FF FF FF FF FF FF FF     .........ˇˇˇˇˇˇˇ
+06B7: FF FF FF FF FF 00 00 28 05 1E 00 65 00 16 00 00     ˇˇˇˇˇ..(...e....
+06C7: 00 07 00 12 00 00 00 00 00 00 00 00 00 00 00 00     ................
+06D7: 00 1E 00 01 00 FF FF FF FF FF FF FF FF FF FF FF     .....ˇˇˇˇˇˇˇˇˇˇˇ
+06E7: FF 00 00 54 05 22 00 65 00 16 00 00 00 08 00 12     ˇ..T.".e........
+06F7: 00 00 00 00 00 00 00 00 00 00 00 00 00 1E 00 01     ................
+0707: 00 FF FF FF FF FF FF FF FF FF FF FF FF 00 00 80     .ˇˇˇˇˇˇˇˇˇˇˇˇ..Ä
+0717: 05 24 00 65 00 16 00 00 00 09 00 12 00 00 00 00     .$.e............
+0727: 00 00 00 00 00 00 00 00 00 1E 00 01 00 FF FF FF     .............ˇˇˇ
+0737: FF FF FF FF FF FF FF FF FF 00 00 AC 05 26 00 65     ˇˇˇˇˇˇˇˇˇ..¨.&.e
+0747: 00 16 00 00 00 0A 00 12 00 00 00 00 00 00 00 00     ................
+0757: 00 00 00 00 00 1E 00 01 00 FF FF FF FF FF FF FF     .........ˇˇˇˇˇˇˇ
+0767: FF FF FF FF FF 00 00 D8 05 28 00 65 00 16 00 04     ˇˇˇˇˇ..ÿ.(.e....
+0777: 00 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00     ................
+0787: 00 1E 00 01 00 FF FF FF FF FF FF FF FF FF FF FF     .....ˇˇˇˇˇˇˇˇˇˇˇ
+0797: FF 00 00 04 06 32 00 65 00 16 00 00 00 0B 00 12     ˇ....2.e........
+07A7: 00 00 00 00 00 00 00 00 00 00 00 00 00 1E 00 01     ................
+07B7: 00 FF FF FF FF FF FF FF FF FF FF FF FF 00 00 30     .ˇˇˇˇˇˇˇˇˇˇˇˇ..0
+07C7: 06 34 00 65 00 16 00 00 00 0C 00 12 00 00 00 00     .4.e............
+07D7: 00 00 00 00 00 00 00 00 00 1E 00 01 00 FF FF FF     .............ˇˇˇ
+07E7: FF FF FF FF FF FF FF FF FF 00 00 5C 06 36 00 65     ˇˇˇˇˇˇˇˇˇ..\.6.e
+07F7: 00 16 00 00 00 0D 00 12 00 00 00 00 00 00 00 00     ................
+0807: 00 00 00 00 00 1E 00 01 00 FF FF FF FF FF FF FF     .........ˇˇˇˇˇˇˇ
+0817: FF FF FF FF FF 00 00 88 06 38 00 65 00 16 00 00     ˇˇˇˇˇ..à.8.e....
+0827: 00 0E 00 12 00 00 00 00 00 00 00 00 00 00 00 00     ................
+0837: 00 1E 00 01 00 FF FF FF FF FF FF FF FF FF FF FF     .....ˇˇˇˇˇˇˇˇˇˇˇ
+0847: FF 00 00 B4 06 3A 00 65 00 16 00 00 00 0F 00 12     ˇ..¥.:.e........
+0857: 00 00 00 00 00 00 00 00 00 00 00 00 00 1E 00 01     ................
+0867: 00 FF FF FF FF FF FF FF FF FF FF FF FF 00 00 E0     .ˇˇˇˇˇˇˇˇˇˇˇˇ..‡
+0877: 06 3C 00 65 00 16 00 00 00 10 00 12 00 00 00 00     .<.e............
+0887: 00 00 00 00 00 00 00 00 00 06 00 01 00 FF FF FF     .............ˇˇˇ
+0897: FF FF FF FF FF FF FF FF FF 00 00 0C 07 10 00 67     ˇˇˇˇˇˇˇˇˇ......g
+08A7: 00 0A 00 00 00 00 00 12 00 00 00 00 00 00 00 00     ................
+08B7: 00 00 00 00 00 06 00 01 00 FF FF FF FF FF FF FF     .........ˇˇˇˇˇˇˇ
+08C7: FF FF FF FF FF 00 00 38 07 16 00 67 00 0A 00 01     ˇˇˇˇˇ..8...g....
+08D7: 00 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00     ................
+08E7: 00 04 00 01 00 10 00 4C 00 FF 00 5E 03 FF FF FF     .......L.ˇ.^.ˇˇˇ
+08F7: FF 00 00 00 00 04 00 04 00 00 00 8C 00 42 00 FF     ˇ..........å.B.ˇ
+0907: 00 E0 03 FF FF FF FF 7A 07 00 00 08 00 64 00 00     .‡.ˇˇˇˇz.....d..
+0917: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+0927: 00 03 00 04 00 00 00 A4 00 52 00 FF 00 1F 03 FF     .......§.R.ˇ...ˇ
+0937: FF FF FF 00 00 00 00 0A 00 04 00 00 00 A4 00 52     ˇˇˇ..........§.R
+0947: 00 FF 00 1F 03 FF FF FF FF BC 07 00 00 06 00 64     .ˇ...ˇˇˇˇº.....d
+0957: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+0967: 00 00 00 02 00 06 00 01 00 FF FF FF FF FF FF FF     .........ˇˇˇˇˇˇˇ
+0977: FF FF FF FF FF 00 00 E8 07 18 00 67 00 0A 00 00     ˇˇˇˇˇ..Ë...g....
+0987: 00 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00     ................
+0997: 00 1E 00 01 00 FF FF FF FF FF FF FF FF FF FF FF     .....ˇˇˇˇˇˇˇˇˇˇˇ
+09A7: FF 00 00 14 08 2A 00 64 00 00 00 00 00 00 00 00     ˇ....*.d........
+09B7: 00 00 00 00 00 00 00 00 00 00 00 14 00 1E 00 01     ................
+09C7: 00 FF FF FF FF FF FF FF FF FF FF FF FF 00 00 40     .ˇˇˇˇˇˇˇˇˇˇˇˇ..@
+09D7: 08 2C 00 64 00 00 00 00 00 00 00 00 00 00 00 00     .,.d............
+09E7: 00 00 00 00 00 00 00 15 00 1E 00 01 00 FF FF FF     .............ˇˇˇ
+09F7: FF FF FF FF FF FF FF FF FF 00 00 6C 08 2E 00 64     ˇˇˇˇˇˇˇˇˇ..l...d
+0A07: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+0A17: 00 00 00 16 00 1E 00 01 00 FF FF FF FF FF FF FF     .........ˇˇˇˇˇˇˇ
+0A27: FF FF FF FF FF 00 00 98 08 30 00 64 00 00 00 00     ˇˇˇˇˇ..ò.0.d....
+0A37: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 17     ................
+0A47: 00 06 00 01 00 FF FF FF FF FF FF FF FF FF FF FF     .....ˇˇˇˇˇˇˇˇˇˇˇ
+0A57: FF 00 00 C4 08 1A 00 67 00 0A 00 03 00 00 00 12     ˇ..ƒ...g........
+0A67: 00 00 00 00 00 00 00 00 00 00 00 00 00 06 00 01     ................
+0A77: 00 FF FF FF FF FF FF FF FF FF FF FF FF 00 00 F0     .ˇˇˇˇˇˇˇˇˇˇˇˇ..
+0A87: 08 1C 00 67 00 0A 00 04 00 00 00 12 00 00 00 00     ...g............
+0A97: 00 00 00 00 00 00 00 00 00 06 00 01 00 FF FF FF     .............ˇˇˇ
+0AA7: FF FF FF FF FF FF FF FF FF 00 00 1C 09 1E 00 67     ˇˇˇˇˇˇˇˇˇ......g
+0AB7: 00 0A 00 06 00 00 00 12 00 00 00 00 00 00 00 00     ................
+0AC7: 00 00 00 00 00 06 00 01 00 FF FF FF FF FF FF FF     .........ˇˇˇˇˇˇˇ
+0AD7: FF FF FF FF FF 00 00 48 09 20 00 67 00 0A 00 07     ˇˇˇˇˇ..H. .g....
+0AE7: 00 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00     ................
+0AF7: 00 06 00 01 00 FF FF FF FF FF FF FF FF FF FF FF     .....ˇˇˇˇˇˇˇˇˇˇˇ
+0B07: FF 00 00 74 09 22 00 67 00 0A 00 05 00 00 00 12     ˇ..t.".g........
+0B17: 00 00 00 00 00 00 00 00 00 00 00 00 00 06 00 01     ................
+0B27: 00 FF FF FF FF FF FF FF FF FF FF FF FF 00 00 A0     .ˇˇˇˇˇˇˇˇˇˇˇˇ..†
+0B37: 09 24 00 67 00 0A 00 08 00 00 00 12 00 00 00 00     .$.g............
+0B47: 00 00 00 00 00 00 00 00 00 06 00 01 00 FF FF FF     .............ˇˇˇ
+0B57: FF FF FF FF FF FF FF FF FF 00 00 CC 09 26 00 67     ˇˇˇˇˇˇˇˇˇ..Ã.&.g
+0B67: 00 0A 00 00 00 00 00 12 00 00 00 00 00 00 00 00     ................
+0B77: 00 00 00 00 00 06 00 01 00 FF FF FF FF FF FF FF     .........ˇˇˇˇˇˇˇ
+0B87: FF FF FF FF FF 00 00 F8 09 28 00 67 00 0A 00 01     ˇˇˇˇˇ..¯.(.g....
+0B97: 00 00 00 12 00 00 00 00 00 00 00 00 00 00 00 00     ................
+0BA7: 00 06 00 01 00 FF FF FF FF FF FF FF FF FF FF FF     .....ˇˇˇˇˇˇˇˇˇˇˇ
+0BB7: FF 00 00 24 0A 2A 00 67 00 0A 00 07 00 00 00 12     ˇ..$.*.g........
+0BC7: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00     ................
+0BD7: 04 0B 00 2C 00 34 00 B2 00 42 00 FF 07 00 00 00     ...,.4.≤.B.ˇ....
+0BE7: 00 01 00 01 00 01 00 00 00 00 02 1E 00 24 00 0C     .............$..
+0BF7: 00 D3 01 29 00 E0 07 00 00 00 00 01 00 01 00 00     .”.).‡..........
+0C07: 00 00 00 00 00 23 00 60 00 28 00 A7 01 3D 00 E0     .....#.`.(.ß.=.‡
+0C17: 07 00 00 00 00 01 00 01 00 00 00 00 00 00 0C 16     ................
+0C27: 00 8C 00 10 00 A7 01 30 00 FF 07 00 00 00 00 01     .å...ß.0.ˇ......
+0C37: 00 01 00 05 00 00 00 00 0E 18 00 84 00 0C 00 81     ...........Ñ...Å
+0C47: 01 2F 00 00 F8 00 00 00 00 01 00 01 00 06 00 00     ./..¯...........
+0C57: 00 00 10 14 00 90 00 34 00 5B 01 53 00 FF 07 00     .....ê.4.[.S.ˇ..
+0C67: 00 00 00 01 00 01 00 06 00 00 00 00 0A 11 00 A8     ...............®
+0C77: 00 E8 00 6F 01 03 01 FF 07 00 00 00 00 01 00 01     .Ë.o...ˇ........
+0C87: 00 04 00 00 00 00 06 0C 00 2C 00 24 00 BA 00 34     .........,.$.∫.4
+0C97: 00 FF 07 00 00 00 00 01 00 01 00 01 00 00 00 00     .ˇ..............
+0CA7: 12 0D 00 C8 00 E8 00 2D 01 F9 00 5E A6 00 00 00     ...».Ë.-.˘.^¶...
+0CB7: 00 01 00 01 00 07 00 00 00 00 08 0B 00 2C 00 44     .............,.D
+0CC7: 00 8E 00 54 00 FF 07 00 00 00 00 01 00 01 00 01     .é.T.ˇ..........
+0CD7: 00 00 00 03 00 FF FF 2D 00 2C 00 00 00 00 00 05     .....ˇˇ-.,......
+0CE7: 00 0C 00 65 00 6A 00 68 00 69 00 02 00 FF FF 43     ...e.j.h.i...ˇˇC
+0CF7: 00 15 00 11 00 00 00 01 00 17 00 02 00 03 00 3C     ...............<
+0D07: 00 5B 00 16 00 36 00 5D 00 6B 00 78 00 79 00 7A     .[...6.].k.x.y.z
+0D17: 00 7B 00 7C 00 7D 00 7E 00 7F 00 80 00 00 00 04     .{.|.}.~..Ä....
+0D27: 00 58 00 5C 00 59 00 5A 00 00 00 0B 00 FF FF FF     .X.\.Y.Z.....ˇˇˇ
+0D37: FF FF FF FF FF FF FF FF FF FF FF FF FF 64 00 77     ˇˇˇˇˇˇˇˇˇˇˇˇˇd.w
+0D47: 00 FF FF 00 00 06 00 04 00 56 00 57 00 06 00 39     .ˇˇ......V.W...9
+0D57: 00 05 00 00 00 09 00 12 00 28 00 27 00 26 00 25     .........(.'.&.%
+0D67: 00 24 00 13 00 14 00 15 00 05 00 3A 00 1C 00 1A     .$.........:....
+0D77: 00 32 00 34 00 06 00 07 00 08 00 09 00 0A 00 0B     .2.4............
+0D87: 00 20 00 0A 00 D4 8B EE 8B 08 8C 22 8C 3C 8C 56     . ...‘ãÓã.å"å<åV
+0D97: 8C 70 8C 8A 8C A4 8C BE 8C 02 00 FF FF 21 00 0B     åpåäå§åæå..ˇˇ!..
+0DA7: 00 5E 00 22 00 23 00 5F 00 60 00 61 00 FF FF FF     .^.".#._.`.a.ˇˇˇ
+0DB7: FF FF FF 2E 00 2F 00 00 00 1D 00 62 00 29 00 2A     ˇˇˇ../.....b.).*
+0DC7: 00 4B 00 37 00 38 00 1F 00 1E 00 19 00 4C 00 4D     .K.7.8.......L.M
+0DD7: 00 4E 00 4F 00 66 00 67 00 6C 00 6D 00 6E 00 6F     .N.O.f.g.l.m.n.o
+0DE7: 00 70 00 FF FF FF FF FF FF 2B 00 31 00 30 00 75     .p.ˇˇˇˇˇˇ+.1.0.u
+0DF7: 00 76 00 63 00 00 00 01 00 02 00 FF FF 18 00 00     .v.c.......ˇˇ...
+0E07: 00 00 00 1E 00 0D 00 0E 00 0F 00 10 00 44 00 3D     .............D.=
+0E17: 00 3E 00 3F 00 40 00 41 00 FF FF FF FF FF FF 45     .>.?.@.A.ˇˇˇˇˇˇE
+0E27: 00 46 00 42 00 47 00 48 00 49 00 4A 00 71 00 72     .F.B.G.H.I.J.q.r
+0E37: 00 73 00 74 00 50 00 51 00 52 00 53 00 54 00 55     .s.t.P.Q.R.S.T.U
+0E47: 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00     ................
+0E57: 00 00 00 00 00 00 00 00 00 00 00 00 00 20 00 20     ............. . 
+0E67: 00 00 00 FF FF C0 00 04 00 01 00 1E 00 00 00 BC     ...ˇˇ¿.........º
+0E77: 00 04 00 03 00 1E 00 00 00 BC 00 04 00 03 00 1E     .........º......
+0E87: 00 00 00 90 01 03 00 01 00 1A 00 00 00 1C 00 03     ...ê............
+0E97: 00 01 00 1A 00 00 00 00 00 80 02 01 00 0A 00 0A     .........Ä......
+0EA7: 00 84 00 01 00 10 00 E0 07 1F 00 00 F8 1F F8 04     .Ñ.....‡....¯.¯.
+0EB7: 00 F5 00 00 00 C8 00 4C 00 E0 FF 01 00 08 00 78     .ı...».L.‡ˇ....x
+0EC7: 01 81 00 F5 00 81 00 49 5F 73 65 65 5F 21 31 2E     .Å.ı.Å.I_see_!1.
+0ED7: 77 61 76 00 47 4C 61 44 4F 53 21 31 2E 77 61 76     wav.GLaDOS!1.wav
+0EE7: 00 47 4C 61 44 4F 53 21 32 2E 77 61 76 00 47 4C     .GLaDOS!2.wav.GL
+0EF7: 61 44 4F 53 21 33 2E 77 61 76 00 54 75 72 72 65     aDOS!3.wav.Turre
+0F07: 74 21 32 2E 77 61 76 00 54 75 72 72 65 74 21 33     t!2.wav.Turret!3
+0F17: 2E 77 61 76 00 54 75 72 72 65 74 21 34 2E 77 61     .wav.Turret!4.wa
+0F27: 76 00 54 75 72 72 65 74 21 35 2E 77 61 76 00 54     v.Turret!5.wav.T
+0F37: 75 72 72 65 74 21 38 2E 77 61 76 00 54 75 72 72     urret!8.wav.Turr
+0F47: 65 74 21 37 2E 77 61 76 00 54 75 72 72 65 74 21     et!7.wav.Turret!
+0F57: 36 2E 77 61 76 00 31 37 32 38 39 36 37 2E 77 61     6.wav.1728967.wa
+0F67: 76 00 57 65 6C 63 6F 6D 21 31 2E 77 61 76 00 73     v.Welcom!1.wav.s
+0F77: 6F 6E 61 72 61 6C 6D 2E 77 61 76 00 72 69 63 68     onaralm.wav.rich
+0F87: 69 65 2E 77 61 76 00 72 61 79 2E 77 61 76 00 6A     ie.wav.ray.wav.j
+0F97: 6F 65 2E 77 61 76 00 00 00 00 00 00 00 00 00 00     oe.wav..........
+0FA7: 00 00 00 00 00 00 00 00 00 00 00 00 00 4D 6F 75     .............Mou
+0FB7: 6E 74 69 6E 67 2E 2E 2E 0A 00 44 72 69 76 65 20     nting.....Drive 
+0FC7: 6E 6F 74 20 6D 6F 75 6E 74 65 64 2E 2E 2E 00 4D     not mounted....M
+0FD7: 43 54 52 4C 5F 7E 31 2E 64 61 74 00 4D 43 54 52     CTRL_~1.dat.MCTR
+0FE7: 4C 5F 7E 31 2E 67 63 69 00 4D 43 54 52 4C 5F 7E     L_~1.gci.MCTRL_~
+0FF7: 31 2E 64 61 32 00 4D 43 54 52 4C 5F 7E 31 2E 67     1.da2.MCTRL_~1.g
+1007: 63 32 00 4D 43 54 52 4C 5F 7E 31 2E 64 61 31 00     c2.MCTRL_~1.da1.
+1017: 4D 43 54 52 4C 5F 7E 31 2E 67 63 31 00 4D 43 54     MCTRL_~1.gc1.MCT
+1027: 52 4C 5F 7E 31 2E 64 61 35 00 4D 43 54 52 4C 5F     RL_~1.da5.MCTRL_
+1037: 7E 31 2E 67 63 35 00 4D 43 54 52 4C 5F 7E 31 2E     ~1.gc5.MCTRL_~1.
+1047: 64 61 36 00 4D 43 54 52 4C 5F 7E 31 2E 67 63 36     da6.MCTRL_~1.gc6
+1057: 00 4D 43 54 52 4C 5F 7E 31 2E 64 61 37 00 4D 43     .MCTRL_~1.da7.MC
+1067: 54 52 4C 5F 7E 31 2E 67 63 37 00 4D 43 54 52 4C     TRL_~1.gc7.MCTRL
+1077: 5F 7E 31 2E 74 78 66 00 08 18 08 18 8E 18 8E 18     _~1.txf.....é.é.
+1087: 8E 18 8E 18 7E 19 6B 19 24 1A 24 1A 7E 19 06 1E     é.é.~.k.$.$.~...
+1097: A8 21 C0 21 D8 21                                   ®!¿!ÿ!
+
+[__MAXPROG]
+14400
+[__MAXMEM]
+14400
+
+[PROGRAM]
+main
+[CODESIZE]
+11381
+[MEMSIZE]
+2188
+[ARGCOUNT]
+0
+[RETURNS]
+NO
+[STACKSIZE]
+0 (AUTO)
+[STACK_ESTIMATE]
+318   (nb:- worst case estimate)
+[MODE]
+128
+
+[PROJECT]
+C:\Users\Brandon\Google Drive\Senior Design Fall 2013\Brandon\Visi\New folder\MCTRL_REV2.4DWork\MCTRL_REV2.4DGenieS
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\uLCD-43PT.fnc
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\PicasoFunctions.fnc
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\4DGL_16bitColours.fnc
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\VisualConst.inc
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\XYposToDegree.inc
+C:\Users\Brandon\Google Drive\Senior Design Fall 2013\Brandon\Visi\New folder\MCTRL_REV2.4DWork\MCTRL_REV2Const.inc
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\CLPrintStrings.inc
+C:\Program Files (x86)\4D Labs\4D Workshop 4 IDE\include\Scope4.inc

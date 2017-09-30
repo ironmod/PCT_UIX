@@ -1,0 +1,13 @@
+linked : 13    main 075E
+linked : 12    DoGFXObjects 0F50
+linked : 11    UpdateObjects 104F
+linked : 10    ActivateForm 12BB
+linked : 9     ledDigitsDisplay 141B
+linked : 8     TurnOffButtons 1556
+linked : 7     WriteObject 1610
+linked : 6     ReadObject 1787
+linked : 5     TMul 1878
+linked : 4     seroutOcs 18AE
+linked : 3     seroutCS 18BD
+linked : 2     PrintStrings 18CF
+linked : 1     XYposToDegree 1AA9
